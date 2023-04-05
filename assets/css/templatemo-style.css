@@ -592,12 +592,15 @@ figure.snip1321 * {
   transition: all 0.2s ease-out;
 }
 figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 figure.snip1321 h4 {
     margin-top: 15px;
