@@ -54,19 +54,11 @@ https://templatemo.com/tm-531-reflux
             <div class="social-network">
               <p class="reseaux">Réseaux :</p>
               <ul >
-<!--                <li>-->
-<!--                  <a href="https://fb.com/templatemo"-->
-<!--                    ><i class="fa fa-facebook"></i-->
-<!--                  ></a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                  <a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--                </li>-->
                 <li>
                   <a href="https://www.linkedin.com/in/antoine-argaillot/"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-github"></i></a>
+                  <a href="https://github.com/Phiroy"><i class="fa fa-github"></i></a>
                 </li>
               </ul>
             </div>
@@ -84,12 +76,18 @@ https://templatemo.com/tm-531-reflux
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>À propos</h2>
+            <h2>Présentation</h2>
             <div class="line-dec"></div>
             <span
-              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
+              >Je m'appelle Antoine Argaillot et je suis actuellement un étudiant en 2e année de BUT informatique à l’IUT de Montpellier-Sètes.
+              Ayant toujours eu un intérêt pour les nouvelles technologies et étant curieux sur leur fonctionnement,
+              je me suis tourné vers les matières scientifiques le long de mon cursus.
+              C’est en première que je découvre l’informatique et la programmation à travers la spécialité NSI (numérique et sciences de l’informatique) et le langage python.
+              J’ai tout de suite apprécié ce domaine et suite à mon bac, je me suis orienté vers le BUT informatique.
+              J’ai choisi ce diplôme pour son côté pratique et professionnel afin d’avoir une meilleure compréhension des métiers de l’informatique.</span
             >
+
+
           </div>
           <div class="left-image-post">
             <div class="row">
@@ -100,17 +98,15 @@ https://templatemo.com/tm-531-reflux
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                  <h4>Reflux HTML CSS Template</h4>
+                  <h4>Projets avenirs</h4>
                   <p>
-                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
-                    sed. Mauris viverra, erat non sagittis gravida, elit dui
-                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
-                    tincidunt quam vitae neque pharetra dignissim eget ut
-                    libero.
+                    Suite au BUT et selon les circonstances, je poursuivais mes études vers un master informatique,
+                    en alternance de préférence, ou je m'insérerais professionnellement.
+                    Je veux continuer sur un master pour approfondir les connaissances que j'ai acquises à l'IUT
+                    en plus d'explorer de nouveaux domaines comme l'intelligence artificielle par exemple.
+                    Concernant mon projet professionnel,
+                    je souhaite devenir développeur logiciel après mes études ou me spécialiser dans la validation en devenant testeur.
                   </p>
-                  <div class="white-button">
-                    <a href="#">Read More</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -124,9 +120,8 @@ https://templatemo.com/tm-531-reflux
             <h2>Mes compétences</h2>
             <div class="line-dec"></div>
             <span
-              >Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
-              Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
-              Nullam eu faucibus diam. Donec eget massa ante.</span
+              >Tout le long de mon cursus, j'ai pu acquerir des compétences techniques en programmation et modélisation ainsi que des compétences de gestions
+            de projet et de communication.</span
             >
           </div>
           <div class="row">
@@ -371,23 +366,23 @@ https://templatemo.com/tm-531-reflux
         }
       };
 
-      // var checkSection = function checkSection() {
-      //   $(".section").each(function() {
-      //     var $this = $(this),
-      //       topEdge = $this.offset().top - 80,
-      //       bottomEdge = topEdge + $this.height(),
-      //       wScroll = $(window).scrollTop();
-      //     if (topEdge < wScroll && bottomEdge > wScroll) {
-      //       var currentId = $this.data("section"),
-      //         reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-      //       reqLink
-      //         .closest("li")
-      //         .addClass("active")
-      //         .siblings()
-      //         .removeClass("active");
-      //     }
-      //   });
-      // };
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
 
       $(".main-menu").on("click", "a", function(e) {
         e.preventDefault();
