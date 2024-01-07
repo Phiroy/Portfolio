@@ -197,11 +197,11 @@
                     <h4>Projets professionnels</h4>
                     <div class="line-dec"></div>
                 </div>
-                <div class="isotope-wrapper">
+                <div >
                     <div class="isotope-box">
 
 
-                        <div class="isotope-item" data-type="animals">
+                        <div class="isotope-item" >
                             <figure class="snip1321">
                                 <img
                                         src="assets/images/nuitInfo.png"
@@ -209,8 +209,8 @@
                                 />
                                 <a href="Inovea_RIC.html">
                                     <figcaption>
-                                        <h4>Nuit de l'informatique</h4>
-                                        <span>Site de prévention réalisé lors de la nuit de l'informatique 2022</span>
+                                        <h4>RIC</h4>
+                                        <span>API web de remplissage d'information de l'entreprise Inovéa</span>
                                     </figcaption>
                                 </a>
                             </figure>
@@ -225,9 +225,9 @@
                     <h4>Projets scolaires</h4>
                     <div class="line-dec"></div>
                 </div>
-                <div class="isotope-wrapper">
-                        <div>
-                        <div class="isotope-item" data-type="nature">
+                <div class="schoolProjects">
+
+                        <div class="isotope-item" >
                             <figure class="snip1321">
 
                                 <img
@@ -244,7 +244,7 @@
 
                         </div>
 
-                        <div class="isotope-item" data-type="people">
+                        <div class="isotope-item">
                             <figure class="snip1321">
                                 <img
                                         src="assets/images/chocolask.png"
@@ -259,7 +259,7 @@
                             </figure>
                         </div>
 
-                        <div class="isotope-item" data-type="people">
+                        <div class="isotope-item">
                             <figure class="snip1321">
                                 <img
                                         src="assets/images/railIHM.png"
@@ -273,13 +273,14 @@
                                 </a>
                             </figure>
                     </div>
-                            <div class="isotope-item" data-type="animals">
+
+                        <div class="isotope-item">
                                 <figure class="snip1321">
                                     <img
                                             src="assets/images/nuitInfo.png"
                                             alt="sq-sample26"
                                     />
-                                    <a href="Inovea_RIC.html">
+                                    <a href="nuitInfo.html">
                                         <figcaption>
                                             <h4>Nuit de l'informatique</h4>
                                             <span>Site de prévention réalisé lors de la nuit de l'informatique 2022</span>
@@ -287,7 +288,6 @@
                                     </a>
                                 </figure>
                             </div>
-            </div>
                 </div>
 
             </div>
@@ -295,36 +295,98 @@
 
         </div>
     </section>
-
     <section class="section contact-me" data-section="section4">
         <div class="container">
             <div class="section-heading">
                 <h2>Me contacter</h2>
                 <div class="line-dec"></div>
                 <span
-                >Si vous êtes intéressé par mon profil, vous pouvez me suivre sur ces réseaux:</span
+                >Vous pouvez m'envoyer un message via le formulaire ci-dessous ou directement par mail :
+                    <a href="mailto: argaillot.antoine@gmail.com">argaillot.antoine@gmail.com</a>
+                    ou par téléphone : <a href="tel:0781281756">0781281756</a>
+                </span
                 >
-                <div>
-                    <li>
-                        <a href="https://www.linkedin.com/in/antoine-argaillot/">linkedin <i class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Phiroy">github <i class="fa fa-github"></i></a>
-                    </li>
-                </div>
-                <span
-                >Vous pouvez également me contacter par mail sur cette adresse : <a
-                        href="mailto: argaillot.antoine@gmail.com">argaillot.antoine@gmail.com</a>
-            </span>
-                <span>
-                et par téléphone : <a href="tel:0781281756">0781281756</a>
-            </span>
-
-
             </div>
+            <div class="row contact" >
+                <div class="right-content">
+                    <div class="container">
+                        <form id="contact" action="" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input
+                                                name="name"
+                                                type="text"
+                                                class="form-control"
+                                                id="name"
+                                                placeholder="Votre nom..."
+                                                required=""
+                                        />
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input
+                                                name="email"
+                                                type="text"
+                                                class="form-control"
+                                                id="email"
+                                                placeholder="Votre email..."
+                                                required=""
+                                        />
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input
+                                                name="subject"
+                                                type="text"
+                                                class="form-control"
+                                                id="subject"
+                                                placeholder="Sujet..."
+                                                required=""
+                                        />
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                        <textarea
+                                name="message"
+                                rows="6"
+                                class="form-control"
+                                id="message"
+                                placeholder="Votre message..."
+                                required=""
+                        ></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="button">
+                                            Envoyer
+                                        </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
+                </div>
+            </div>
+            <div class="section-heading">
+                <span>Si vous êtes intéressé par mon profil, vous pouvez me suivre sur ces réseaux:</span>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/antoine-argaillot/">linkedin <i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Phiroy">github <i class="fa fa-github"></i></a>
+                </li>
+            </div>
         </div>
+
     </section>
+</div>
 </div>
 
 <!-- Scripts -->
@@ -369,6 +431,7 @@
                 var currentId = $this.data("section"),
                     reqLink = $("a").filter("[href*=\\#" + currentId + "]");
                 reqLink
+                    .closest("li")
                     .closest("li")
                     .addClass("active")
                     .siblings()
