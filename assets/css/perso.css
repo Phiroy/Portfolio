@@ -1,0 +1,11 @@
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#temporalRift {
+    width: 75%;
+}
+

@@ -8,16 +8,18 @@ https://templatemo.com/tm-531-reflux
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
 #page-wraper {
-    background: url(../images/page-bg.jpg) no-repeat center center fixed;
+    background: url(../images/page-bg.jpg) no-repeat center center fixed ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
     width: 100%;
 }
 
@@ -40,7 +42,7 @@ a:hover {
 }
 
 p {
-    font-size: 16px;
+    font-size: 19px;
     line-height: 24px;
     color: #fff;
 }
@@ -115,7 +117,7 @@ html {
     height: 70px;
     line-height: 70px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
     color: #fff;
     width: 100%;
@@ -160,7 +162,7 @@ html {
 }
 
 .menu .social-network p {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
     color: #fff;
 }
@@ -230,32 +232,32 @@ html {
 
 .menu {
     left: 10%;
-  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  -webkit-overflow-scrolling: touch;
-  background-color: #0B1F66;
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
-  min-width: 45px !important;
-  outline: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  padding: 0;
-  position: fixed !important;
-  top: calc(0px);  
-  width: 20%;
-  will-change: transform;
-  z-index: 9999 !important;
+    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    -webkit-overflow-scrolling: touch;
+    background-color: #0B1F66;
+    box-sizing: border-box;
+    height: 100vh;
+    max-height: 100vh !important;
+    max-width: 80vw !important;
+    min-width: 45px !important;
+    outline: none;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 0;
+    position: fixed !important;
+    top: calc(0px);
+    width: 20%;
+    will-change: transform;
+    z-index: 9999 !important;
 }
 
 .menu-toggle {
-  color: #fff;
-  cursor: pointer;
-  font-size: 25px;
-  position: fixed;
-  right: 25px;
-  top: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    right: 25px;
+    top: 25px;
 }
 
 #menu-toggle {
@@ -274,7 +276,7 @@ html {
 }
 
 .menu-close {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #menu-close {
@@ -323,7 +325,7 @@ html {
 
 .section-heading span {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 19px;
     color: #fff;
     letter-spacing: 0.5px;
 }
@@ -363,7 +365,7 @@ html {
     cursor: pointer;
 }
 
-.button{
+.button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
@@ -398,7 +400,17 @@ html {
 
 .right-image-post {
     margin-top: 60px;
+    margin-bottom: 60px;
     padding-top: 60px;
+
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.left-image-post {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+
     border-top: 2px solid rgba(250, 250, 250, 0.1);
 }
 
@@ -410,6 +422,7 @@ html {
 .right-image-post h4,
 .left-image-post h4 {
     margin-top: 30px;
+
 }
 
 .right-image-post p,
@@ -435,6 +448,8 @@ html {
     padding: 50px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-item h4 {
@@ -442,8 +457,14 @@ html {
 }
 
 .service-item p {
+    margin-top: 2px;
     transition: all 0.5s;
 }
+
+.service-item li {
+    transition: all 0.5s;
+}
+
 
 .service-item:hover {
     background-color: rgba(250, 250, 250, 1);
@@ -454,6 +475,10 @@ html {
 }
 
 .service-item:hover p {
+    color: #4a4a4a;
+}
+
+.service-item:hover li {
     color: #4a4a4a;
 }
 
@@ -555,9 +580,9 @@ section.my-work .section-heading {
 
 .isotope-item {
     position: relative;
-    width: 48%;
+    width: 60%;
     margin: 1%;
-    border-bottom: 2px solid rgba(250,250,250,0.1);
+    border-bottom: 2px solid rgba(250, 250, 250, 0.1);
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
@@ -565,6 +590,8 @@ section.my-work .section-heading {
 .isotope-item img {
     top: 0;
     left: 0;
+    min-height: 100%;
+    min-width: 100%;
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -580,17 +607,19 @@ section.my-work .section-heading {
 }
 
 figure.snip1321 {
-  overflow: hidden;
-  text-align: center;
-  -webkit-perspective: 50em;
-  perspective: 50em;
+    overflow: hidden;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
 }
+
 figure.snip1321 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
+
 figure.snip1321 figcaption {
     top: 50%;
     position: absolute;
@@ -602,67 +631,74 @@ figure.snip1321 figcaption {
     display: flex;
     flex-direction: column;
 }
+
 figure.snip1321 h4 {
     margin-top: 15px;
-  margin-bottom: 5px;
-  color: #232323;
+    margin-bottom: 5px;
+    color: #232323;
 }
+
 figure.snip1321 span {
     font-size: 14px;
     font-style: italic;
     display: block;
     color: #7a7a7a;
 }
+
 figure.snip1321 i {
-  position: relative!important;
-  font-size: 18px;
-  background-color: #0B1F66;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5px;
-  color: #fff;
+    position: relative !important;
+    font-size: 18px;
+    background-color: #0B1F66;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #fff;
 }
+
 figure.snip1321:after {
-  background-color: #ffffff;
-  position: absolute;
-  content: "";
-  display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0;
 }
+
 figure.snip1321 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
 }
+
 figure.snip1321:hover figcaption,
 figure.snip1321.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
+
 figure.snip1321:hover:after,
 figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0.9;
 }
 
 
@@ -673,8 +709,8 @@ section.contact-me {
 }
 
 #contact input {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 1);
     border-radius: 0px;
     margin-bottom: 30px;
     color: #fff;
@@ -691,8 +727,8 @@ section.contact-me {
 }
 
 #contact textarea {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 1);
     border-radius: 0px;
     margin-bottom: 30px;
     color: #fff;
@@ -726,7 +762,7 @@ section.contact-me {
     }
 }
 
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
+@media screen and (max-width: 1680px) and (min-width: 846px) {
     .menu .social-network ul li a {
         width: 36px;
         height: 36px;
@@ -778,15 +814,15 @@ section.contact-me {
 #menu-toggle,
 #menu-close {
     display: none;
-}  
+}
 
-@media screen and (max-width: 845px) {        
+@media screen and (max-width: 845px) {
     #menu-toggle,
     #menu-close {
         display: inline-block;
-    }    
+    }
 
-    .menu {        
+    .menu {
         width: 320px;
         -webkit-transform: translateX(-100%) !important;
         transform: translateX(-100%) !important;
@@ -796,7 +832,7 @@ section.contact-me {
     }
 
     .menu .image {
-        margin-top: 40px;        
+        margin-top: 40px;
     }
 
     .menu .image img {
@@ -816,31 +852,37 @@ section.contact-me {
     .menu.open {
         display: inline-block;
         -webkit-transform: translateX(0) !important;
-                transform: translateX(0) !important;
+        transform: translateX(0) !important;
     }
 
     .responsive-nav {
         display: inline-block;
     }
+
     .section {
         width: 94%;
         right: 3%;
         left: 3%;
     }
+
     .isotope-item {
         width: 94%;
         margin: 3%;
     }
+
     .left-image-post img {
         margin-bottom: 30px;
     }
+
     .right-image-post img {
         margin-top: 30px;
     }
+
     .isotope-item {
         border-bottom: none;
         text-align: center;
     }
+
     .isotope-toolbar {
         margin-bottom: 20px;
     }
