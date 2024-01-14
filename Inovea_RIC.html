@@ -1,4 +1,4 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
@@ -13,7 +13,7 @@
             rel="stylesheet"
     />
 
-    <title>Antoine Argaillot - Portefolio</title>
+    <title>RIC Portfolio</title>
     <!--
     Reflux Template
     https://templatemo.com/tm-531-reflux
@@ -36,19 +36,22 @@
         <div id="menu" class="menu">
             <i class="fa fa-times" id="menu-close"></i>
             <div class="container">
-                <div class="image">
-                    <a href="#"><img src="assets/images/profil/profilePicture.jpg" alt=""/></a>
-                </div>
                 <div class="author-content">
                     <h4>Antoine Argaillot</h4>
                     <span>Étudiant en informatique</span>
+                    <div class="button home-button">
+                        <a href="index.html#section3">Page d'accueil</a>
+                    </div>
                 </div>
+                <h4>Projets</h4>
+
                 <nav class="main-nav">
                     <ul class="main-menu">
-                        <li><a href="index.html#section3">Page de présentation</a></li>
+                        <li class="active"><a href="Inovea_RIC.html">RIC</a></li>
+                        <li><a href="Chocomaps.html">Chocomaps</a></li>
                         <li><a href="temporalRift.html">Temporal Rift</a></li>
                         <li><a href="Chocolask.html">Chocolask</a></li>
-                        <li class="active"><a href="nuitInfo.html">Nuit de l'informatique</a></li>
+                        <li><a href="nuitInfo.html">Nuit de l'informatique</a></li>
                         <li><a href="AventuriersDuRail.html">Aventuriers du Rail</a></li>
                     </ul>
                 </nav>
@@ -63,10 +66,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="copyright-text">
-                    <p>Copyright 2019 Reflux Design</p>
-                </div>
             </div>
         </div>
     </div>
@@ -74,71 +73,235 @@
     <section class="section">
         <div class="container">
             <div class="section-heading">
-                <h2>Nuit de l'informatique 2022</h2>
+                <h2>RIC</h2>
                 <div class="line-dec"></div>
                 <img
-                        src="assets/images/nuitInfo.png"
+                        src="assets/images/RIC/onglet%20info%20perso.png"
                         alt="sq-sample26"
                 />
                 <div class="line-dec"></div>
-                <span
-                >Ayant participé à la nuit de l’informatique 2022, j’ai pu travailler sur un site web JavaScript dans une équipe de 8 membres lors de la nuit du 1er décembre.
-                    L’objectif de cette année était de réaliser un site de prévention contre le SIDA tout en intégrant les défis que l’on avait sélectionné.</span
-                >
+                <p>
+                    Le RIC (Recueil d’Informations Clientes) est une API web développée au sein du service informatique
+                    de Inovéa pour aider les consultants à remplir les informations des clients. Une version du RIC
+                    avait déjà été développée par un partenaire Upsideo, le but était donc de créer notre propre version
+                    afin de stocker les données et de les utiliser pour des projets ultérieurs.
+                </p>
+                <p>
+                    Avec un développeur front-end et à partir des demandes de mon tuteur, je devais donc reprendre et
+                    finir le développement de la partie back-end du site ainsi que mettre en place une route d’envoi
+                    vers Upsideo.
+                    Suite à cela, je me suis occupé de maintenir le site en plus de passer à l’étape suivante avec le
+                    RIC V2 qui doit permettre la mise à jour automatique de notre RIC à chaque modification sur le RIC
+                    de Upsideo.
+                </p>
+                <p>
+                    Enfin, ce projet est programmé en C# avec le framework .NET en lien à une base de données Microsoft
+                    SQL Server avec des outils annexes comme GitLab, Confluence ou Jira.
+                </p>
 
 
             </div>
-        </div>
 
+            <div class="left-image-post">
 
-        <div class="container">
-            <div class="right-image-post">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="left-image">
-                            <img src="assets/images/plagueINC.png" alt=""/>
+                <div class="section-heading">
+                    <h2>RIC V1 </h2>
+                    <div class="line-dec"></div>
+
+                    <span
+                    >Cette première version a été développée au sein de mon stage de 2e année de BUT et début d’alternance de la 3e pour une mise en production en octobre 2023.</span
+                    >
+                    <div class="rapportDiv">
+                        <span
+                        >Vous pouvez retrouver mon rapport de stage ci-dessous pour une explication détaillée de ce projet (ainsi que d'autres tâches sur lesquelles j'ai pu travailler):</span
+                        >
+                        <div class="button">
+                            <a href="assets/Argaillot-Stage%20Inovéa-Rapport.pdf">Rapport de stage</a>
                         </div>
                     </div>
+
+
+                </div>
+
+                <div class="row">
+
                     <div class="col-md-6">
+
+                    </div>
                         <div class="right-text">
-                            <h4>Idée</h4>
+                            <h4>back-end du formulaire</h4>
 
                             <p>
-                                Suite à plusieurs heures de réflexion, nous nous sommes mis d’accord sur le concept du projet.
-                                Notre projet allait être une application web où le joueur devra empêcher la propagation de MST en gérant le budget,
-                                la sensibilisation au sein de la population et la technologie. Une des inspirations principales était PlagueInc qui est un jeu
-                                centré sur les pandémies.
+                                En collaboration avec un développeur front-end, j’ai développé une panoplie de routes
+                                API afin de faire les différents traitements sur les données (CRUD) ou de fournir les
+                                informations nécessaires pour certains traitements front.
+                            </p>
+                            <div class="left-image">
+                                <img src="assets/images/RIC/exempleBackFront.png" alt=""/>
+                            </div>
+                            <p>
+                                En plus de ces routes, j’ai mis en place les dernières tables manquantes en faisant
+                                attention à la qualité de la structure, la version de Microsoft SQL Server que nous
+                                utilisons étant difficile à manipuler et à modifier.
+                                <br>Ce qui a été intéressant dans cette partie a été la concertation avec mon collègue et mon tuteur
+                                pour déterminer ce dont on a besoin et qui du back ou du front s'en chargera.
+
 
                             </p>
                         </div>
-                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="right-image-post">
+                <h4>Envoi à API partenaire Upsideo</h4>
                 <div class="row">
+
                     <div class="col-md-6">
-                        <div class="left-image">
-                            <img src="assets/images/NuitInfoArchi.png" alt=""/>
+                        <div class="right-image">
+                            <img src="assets/images/RIC/foyerExemple.png" alt=""/>
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <div class="right-image">
+                            <img src="assets/images/RIC/foyerExempleUpsideo.png" alt=""/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    Le but de ma route d’envoi est de copier notre RIC vers Upsideo via la création d’un recueil et
+                    l’envoi d’un maximum d’informations chez eux. Pour ce faire, j’avais accès à la documentation de
+                    Upsideo avec un swagger contenant l’ensemble de leurs routes et objets en plus d’un contact avec un
+                    technicien de Upsideo pour obtenir des informations ou tester qu’il n’y avait pas de problèmes.
+                </p>
+                <p>
+                    Ce fut une entreprise assez conséquente qui a occupé la majorité de mon stage où j’ai importé une
+                    grande partie du swagger de Upsideo et développé un ensemble de mappers pour passer de notre RIC à
+                    Upsideo. De plus, j’ai dû faire attention à des éléments comme la synchronicité et la généricité
+                    pour ne pas répéter mon code et optimiser le processus. De même, les multiples différences entre les
+                    deux versions ont mené à des difficultés à la fois pour déterminer le lien et réaliser le mapping.
+                </p>
+                <div class="row ric-send-div">
+
+                        <div class="right-image">
+                            <img src="assets/images/RIC/envoiUpsideoOngletPersoCode.png" alt=""/>
+                        </div>
+                        <div class="right-image">
+                            <img src="assets/images/RIC/fatcaMapExemple.png" alt=""/>
+                        </div>
+
+                </div>
+                <p>
+                    Ce que je retiens de cette route a été l’importance de la documentation pour réaliser une API en
+                    plus de m’avoir permis de maîtriser divers aspects de C#.
+                </p>
+
+
+                <div class="row">
+
                         <div class="right-text">
-                            <h4>Mon premier projet JavaScript</h4>
+                            <h4>Maintenance et debug</h4>
 
                             <p>
-                                Ce fut mon premier site réalisé en JavaScript, n’ayant eu aucun cours au préalable, moi et mon équipe avons dû apprendre
-                                au fur et à mesure ce langage et comment faire des objets ou faire le lien avec la page html. Malgré beaucoup d'effort,
-                                le site ne fut pas fonctionnel au final, mais cela nous a donné un aperçu sur le développement d’un site JavaScript.
+                                Une fois mise en production, le support s’est mis à me rapporter les différents bugs
+                                rencontrés sur le formulaire ou l’envoi. Ce fut l’occasion de revoir mon code à certains
+                                endroits pour trouver une meilleure implémentation, simplifier ou juste corriger les
+                                problèmes. Je n’étais pas uniquement chargé de revoir mon code, il y avait également
+                                plusieurs routes annexes problématiques que j’ai testées et analysées afin de reporter
+                                l’origine au développeur concerné.
+                            </p>
+                            <p>
+                                Cela m’a vraiment montré l’importance de savoir naviguer dans le code avec les
+                                breakpoints pour voir l’état des variables, mais aussi de bien organiser son code pour
+                                qu’il soit compréhensible rapidement.
 
                             </p>
                         </div>
-                    </div>
+
+
                 </div>
+
             </div>
+
+
+            <div class="right-image-post">
+                <div class="section-heading">
+                    <h2>RIC V2</h2>
+                    <div class="line-dec"></div>
+                    <span
+                    >Depuis la mise en production de la V1, je travaille activement au développement de cette V2 dont l’objectif final est d'avoir des RIC constamment à jour dans notre base.</span
+                    >
+                </div>
+
+                        <div class="right-text">
+                            <h4>Mise à jour via webhook</h4>
+
+                            <p>
+                                J’ai basé ma conception sur un webhook développé par Upsideo. Celui-ci nous envoie des
+                                listes de modifications réalisées à intervalle régulier. Dans le but d’éviter la
+                                répétition de code en gérant chaque entité individuellement, j’ai mis en place un
+                                système générique combinant plusieurs fonctionnalités de C# telles que le polymorphisme,
+                                la réflection et les méthodes génériques. Même si certains cas spécifiques font l’objet
+                                de traitements supplémentaires, le système est suffisamment flexible pour gérer le reste
+                                des entités. De même, j’ai utilisé la gestion des exceptions pour que la mise à jour se
+                                poursuive peu importe si une modification est fautive.
+                            </p>
+                            <div class="row ric-send-div">
+
+                                <div class="right-image">
+                                    <img src="assets/images/RIC/traitementWebhookCode.png" alt=""/>
+                                </div>
+
+
+                            </div>
+                            <p>
+                                Revoir et combiner ces multiples éléments que j’avais déjà abordés en cours et en début
+                                de projet a vraiment permis d’approfondir ma maîtrise en plus d’améliorer mes
+                                compétences de conception pour mettre en place ce genre de système complexe.
+
+
+                            </p>
+                        </div>
+
+
+
+                <div class="right-text">
+                    <h4>Refactor</h4>
+
+                    <p>
+                        Un autre élément à revoir pour cette V2 est la qualité du code. En effet, le code s’est
+                        accumulé au fur des mois avec une partie datant d’avant mon arrivée. Les bonnes
+                        pratiques de programmation n’ont donc pas forcément été appliquées que ce soit en termes
+                        de nommage, principe de responsabilité unique ou documentation. Un objectif secondaire
+                        que je me suis donné est de diviser au plus mes méthodes lourdes et de commencer à créer
+                        des classes plus spécialisées pour une meilleure organisation.
+
+
+                    </p>
+                </div>
+
         </div>
+
+        <div class="section-heading">
+            <h2>Bilan & horizons</h2>
+            <div class="line-dec"></div>
+            <p>
+                Ce projet étant ma première expérience professionnelle, j’ai pu apprendre beaucoup autant au niveau de
+                la technique que de la gestion de service. Pour ce qui est de la technique, C#, les routes API ou encore
+                certains aspects de programmation sont beaucoup plus clairs pour moi et j’ai pu progressé en termes de
+                qualité de code et d'autonomie pour la conception.
+                Même si mon projet n’ait ni été organisé en agile ni spécifié, j’ai pu aborder l'expérience agile au
+                sein du service via les daily meeting et un système léger de tâche.
+            </p>
+
+
+
+            <p>
+                Enfin, concernant l’avenir du projet, je dois encore finir la V2 et après cela, il y aura encore deux
+                versions supplémentaires pour intégrer respectivement les personnes morales et la création depuis
+                Upsideo des RIC. Le fil rouge sur l’ensemble du projet étant de veiller attentivement à la qualité du
+                code via le refactoring pour garantir la maintenabilité sur le long terme.
+            </p>
+        </div>
+
 
     </section>
 

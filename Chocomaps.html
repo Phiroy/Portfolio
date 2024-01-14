@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+            rel="stylesheet"
+    />
+
+    <title>Chocomaps Portfolio</title>
+    <!--
+    Reflux Template
+    https://templatemo.com/tm-531-reflux
+    -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/css/templatemo-style.css"/>
+    <link rel="stylesheet" href="assets/css/owl.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/perso.css"/>
+</head>
+
+<body>
+<div id="page-wraper">
+    <!-- Sidebar Menu -->
+    <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+            <i class="fa fa-times" id="menu-close"></i>
+            <div class="container">
+                <div class="author-content">
+                    <h4>Antoine Argaillot</h4>
+                    <span>Étudiant en informatique</span>
+                    <div class="button home-button">
+                        <a href="index.html#section3">Page d'accueil</a>
+                    </div>
+                </div>
+                <h4>Projets</h4>
+
+                <nav class="main-nav">
+                    <ul class="main-menu">
+                        <li><a href="Inovea_RIC.html">RIC</a></li>
+                        <li class="active"><a href="Chocomaps.html">Chocomaps</a></li>
+                        <li><a href="temporalRift.html">Temporal Rift</a></li>
+                        <li><a href="Chocolask.html">Chocolask</a></li>
+                        <li><a href="nuitInfo.html">Nuit de l'informatique</a></li>
+                        <li><a href="AventuriersDuRail.html">Aventuriers du Rail</a></li>
+                    </ul>
+                </nav>
+                <div class="social-network">
+                    <p class="reseaux">Réseaux :</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/antoine-argaillot/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Phiroy"><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Chocomaps</h2>
+                <div class="line-dec"></div>
+                <img
+                        src="assets/images/chocomaps/chocomaps.png"
+                        alt="sq-sample26"
+                />
+                <div class="line-dec"></div>
+                <span
+                >Chocomaps est une application de calcul d’itinéraire développée pour la SAE de 4e semestre du BUT.
+                    Toujours dans une équipe de 4 organisée en SCRUM, nous devions reprendre une version de base du site puis l'optimiser,
+                    rajouter des fonctionnalités et améliorer l’interface. Pour cela, nous devions implémenter des éléments d’API REST,
+                    utiliser des librairies externes et mettre en pratique ce que nous avions appris sur les tests et les algorithmes.</span
+                >
+
+
+            </div>
+
+                <div class="left-image-post">
+                    <div class="row">
+                        <div class="section-heading">
+                            <h2>Optimisation de l'application</h2>
+                            <div class="line-dec"></div>
+
+                            <span
+                            >Depuis le code de base fourni, nous avons tous cherché différentes manières de l’optimiser avec différentes approches sur les multiples parties de l’application.</span
+                            >
+                        </div>
+                        <div class="col-md-6">
+                            <div class="left-image">
+                                <img src="assets/images/chocomaps/dijkstraPriorityQ.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>Algorithmes de calcul de trajet</h4>
+
+                                <p>
+                                    Une première étape a été la recherche d’un meilleur algorithme, celui de base, dijkstra, fonctionnait, mais ne pouvait pas supporter de grands trajets.
+                                    Nous sommes passés par plusieurs alternatives, d’une version améliorée de dijkstra à un A* utilisant le cache.
+                                    Pour ma part, j’ai développé une version de dijkstra avec une priority queue afin d’optimiser la récupération de la ville la plus intéressante par rapport à la distance.
+                                    Bien qu’elle ne fut pas utilisée dans la version finale, cela m’a permis de revoir dijkstra et faire ma propre implémentation de priority queue.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image-less">
+                        <h4>Base de données</h4>
+
+                        <p>
+                            Un ensemble d’opérations a été effectué sur la base de données.
+                            Par exemple, nous avons mis des index sur les attributs les plus importants et créé des vues matérialisées pour réduire la complexité et le temps des requêtes.
+
+                        </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>Profilage avec XDebug</h4>
+
+                                <p>
+                                    Pour guider l’optimisation, j’ai installé l’extension XDebug qui permet non seulement de pouvoir utiliser les breakpoint sur l’IDE et donc d’analyser le code,
+                                    mais aussi de pouvoir faire du “profiling” pour observer le comportement du code.
+                                    En effet, grâce à cet outil, j’ai pu mettre en avant les méthodes qui concentrent le plus de temps, avec notamment le nombre d’appels effectués,
+                                    et donc, proposer des pistes d’améliorations sur les endroits clef.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-image">
+                                <img src="assets/images/chocomaps/XDebug.png" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="right-image-post">
+                    <div class="section-heading">
+                        <h2>Refonte de l'architecture</h2>
+                        <div class="line-dec"></div>
+                        <span
+                        >Plusieurs changements majeurs ont été effectués sur l’architecture du projet en vue de mieux séparer les différentes couches.</span
+                        >
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>API REST</h4>
+
+                                <p>
+                                    Plusieurs changements ont été fait pour que notre application respecte les principes d’API REST.
+                                    J'ai ainsi implémenté le système de routage, la gestion d’authentification des utilisateurs en stockant un jeton dans les cookies et la création systématique d’interfaces.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="left-image">
+                                <img src="assets/images/chocomaps/routeurURL.png" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>MVCS</h4>
+
+                                <p>
+                                    Nous sommes également passés à une architecture MVCS (Model View Controller Service) pour mieux organiser notre code.
+                                    J’ai donc refactor le code des contrôleurs vers les services pour séparer la logique métier
+                                    afin de faciliter la compréhension et respecter le principe de responsabilité unique.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="left-image">
+                                <img src="assets/images/chocomaps/MVCS.png" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            <div class="right-image-post">
+
+                <div class="section-heading">
+                    <h2>Tests unitaires</h2>
+                    <div class="line-dec"></div>
+                    <p>
+                        Je me suis chargé de développer l’ensemble des tests du projet avec l’extension PHPUnit. Le refactor du code vers les services a été d’une grande aide, le retour des méthodes de services pouvant être testé directement.
+                    </p>
+                    <p>
+                        De plus, la création d’interface des API a permis la mise en place de mock pour mes tests. Grâce au mock et aux services, j’ai pu vérifier les résultats de chaque méthode individuellement.
+                    </p>
+                    <p>
+                        Enfin, j’ai tenu compte de la couverture de code comme critère afin de créer les tests les plus pertinents pour toucher le plus de lignes de code.
+                    </p>
+                    <div class="left-image">
+                        <img src="assets/images/chocomaps/UtilisateurServiceTest.png" alt=""/>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+</div>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<!--    <script src="assets/js/lightbox.js"></script>-->
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
