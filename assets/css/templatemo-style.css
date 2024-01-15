@@ -463,7 +463,7 @@ html {
 }
 
 .service-item {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     padding: 50px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
@@ -550,7 +550,7 @@ html {
 
 section.my-work .section-heading {
     text-align: center;
-    padding: 80px 45px 50px 45px;
+    padding: 40px 45px 10px 45px;
 }
 
 .isotope-wrapper {
@@ -1004,4 +1004,13 @@ section.contact-me {
 
 .center .button {
     width: fit-content;
+}
+
+.center p {
+    text-align: center;
+}
+
+.center div {
+  column-gap: 15px;
+    display: flex;
 }
